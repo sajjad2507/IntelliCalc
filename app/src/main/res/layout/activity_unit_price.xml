@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.UnitPriceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:text="Unit Calculator"
+        android:textColor="#20272D"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#20272D"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Units"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"/>
+
+                <EditText
+                    android:id="@+id/totalUnits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginStart="8dp"
+                    android:hint="0"
+                    android:gravity="center"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    style="@style/NoUnderlineEditText"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="44dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#20272D"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"/>
+
+                <EditText
+                    android:id="@+id/totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginStart="8dp"
+                    android:hint="0"
+                    android:gravity="center"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    style="@style/NoUnderlineEditText"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="44dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F86334"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Single Unit"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/singleUnitPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="36dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/standard"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/unitprice" />
+
+        <ImageView
+            android:id="@+id/category"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            app:tint="#F86334"
+            android:layout_weight="1"
+            android:src="@drawable/category" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#20272D"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/seven"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/eight"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/nine"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/allClear"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/all_clear"
+                    android:gravity="center" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/six"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/up"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/minus"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/multiply"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="36sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/zero"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/doubleZero"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/dot"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="."
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/equal"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/equal"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|center_horizontal"-->
+<!--        ads:adSize="BANNER"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>-->
+
+
+</LinearLayout>

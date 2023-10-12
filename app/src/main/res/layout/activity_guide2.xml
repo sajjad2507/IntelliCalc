@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guide2">
+
+    <TextView
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="skip"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/onboardsecond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="72dp"
+        android:gravity="center"
+        android:text="Explore the power of calculation with IntelliCalc, discounts, tips, unit prices, fuel costs etc."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/iconReference"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconReference"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/referencetwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="next"
+        android:textColor="#F86334"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#xA;    &lt;TextView&#xA;        android:id=&quot;@+id/skipBtn&quot;&#xA;        android:layout_width=&quot;wrap_content&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:layout_marginTop=&quot;40dp&quot;&#xA;        android:layout_marginEnd=&quot;32dp&quot;&#xA;        android:text=&quot;skip&quot;&#xA;        android:textSize=&quot;18sp&quot;&#xA;        app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#xA;        app:layout_constraintTop_toTopOf=&quot;parent&quot; />&#xA;&#xA;    &lt;ImageView&#xA;        android:layout_width=&quot;match_parent&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:layout_marginBottom=&quot;120dp&quot;&#xA;        android:src=&quot;@drawable/onboardsecond&quot;&#xA;        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#xA;        app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#xA;        app:layout_constraintStart_toStartOf=&quot;parent&quot;&#xA;        app:layout_constraintTop_toTopOf=&quot;parent&quot; />&#xA;&#xA;    &lt;TextView&#xA;        android:layout_width=&quot;match_parent&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:layout_marginStart=&quot;32dp&quot;&#xA;        android:layout_marginEnd=&quot;32dp&quot;&#xA;        android:layout_marginBottom=&quot;72dp&quot;&#xA;        android:gravity=&quot;center&quot;&#xA;        android:text=&quot;Explore the power of calculation with IntelliCalc, discounts, tips, unit prices, fuel costs etc.&quot;&#xA;        android:textSize=&quot;18sp&quot;&#xA;        app:layout_constraintBottom_toTopOf=&quot;@id/iconReference&quot;&#xA;        app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#xA;        app:layout_constraintStart_toStartOf=&quot;parent&quot; />&#xA;&#xA;    &lt;ImageView&#xA;        android:id=&quot;@+id/iconReference&quot;&#xA;        android:layout_width=&quot;wrap_content&quot;&#xA;        android:layout_height=&quot;7dp&quot;&#xA;        android:layout_marginStart=&quot;36dp&quot;&#xA;        android:layout_marginBottom=&quot;48dp&quot;&#xA;        android:src=&quot;@drawable/referencetwo&quot;&#xA;        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#xA;        app:layout_constraintStart_toStartOf=&quot;parent&quot; />&#xA;&#xA;    &lt;TextView&#xA;        android:id=&quot;@+id/nextBtn&quot;&#xA;        android:layout_width=&quot;wrap_content&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:layout_marginEnd=&quot;36dp&quot;&#xA;        android:layout_marginBottom=&quot;48dp&quot;&#xA;        android:text=&quot;next&quot;&#xA;        android:textColor=&quot;#F86334&quot;&#xA;        android:textSize=&quot;20sp&quot;&#xA;        android:textStyle=&quot;bold&quot;&#xA;        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#xA;        app:layout_constraintEnd_toEndOf=&quot;parent&quot; />&#xA;"
+        tools:layout_editor_absoluteY="768dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

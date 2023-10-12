@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IntelliCalc"
+        tools:targetApi="31">
+        <activity
+            android:name=".Guide3"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Guide2"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Guide1"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.FuelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.UnitPriceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PercentageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.DiscountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TipActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CategoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4678475583179673~9722170361" />
+    </application>
+
+</manifest>
